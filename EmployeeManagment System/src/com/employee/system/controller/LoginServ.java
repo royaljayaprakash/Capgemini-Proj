@@ -16,7 +16,8 @@ import com.employee.systems.dev.dto.Users;
 public class LoginServ extends HttpServlet
 {
 @Override
-protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
+{
 	String userId = req.getParameter("userId");
 	String password = req.getParameter("password");
 
@@ -24,7 +25,8 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 	Users USER = s.loginService(userId, password);
 
 	HttpSession session;
-	if (USER != null) {
+	if (USER != null)
+	{
 		session = req.getSession();
 		session.setAttribute("Users", USER);
 

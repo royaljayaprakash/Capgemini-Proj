@@ -15,10 +15,37 @@
   <servlet-class>com.employee.system.controller.LoginServ</servlet-class>
   </servlet>
   <servlet-mapping>
-  
    <servlet-name>login</servlet-name>
   <url-pattern>/LoginProfile</url-pattern>
+  </servlet-mapping>
   
+  
+  <servlet>
+  <servlet-name>create</servlet-name>
+  <servlet-class>com.employee.system.controller.CreateServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>create</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>delete</servlet-name>
+  <servlet-class>com.employee.system.controller.DeleteServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>delete</servlet-name>
+  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>update</servlet-name>
+  <servlet-class>com.employee.system.controller.UpdateServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   <servlet-name>update</servlet-name>
+  <url-pattern>/update</url-pattern>
   </servlet-mapping>
 
 </web-app>
